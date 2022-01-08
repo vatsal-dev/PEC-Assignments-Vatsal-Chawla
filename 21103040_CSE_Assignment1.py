@@ -23,3 +23,24 @@ print ("Average of the three numbers is " + str(average))
 
 
 #Ques 2: Write a python program to compute a person's income tax.
+
+#Define variables to take input
+gross_income = float(input("Put your gross income($): "))
+dependents = int(input("Put number of dependents: "))
+
+#Define standard decution
+standard_deduction = 10000
+
+#Define formula for taxable income 
+taxable_income = gross_income - standard_deduction - (3000*dependents)
+
+#Define formula for income tax
+income_tax = taxable_income*(20/100)
+
+#Print result
+print("Your income tax is " + str(income_tax))
+
+#Output:
+#Put your gross income($): 70000.92
+#Put number of dependents: 2
+#Your income tax is 10800.184000000001
