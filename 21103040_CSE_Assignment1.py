@@ -44,3 +44,55 @@ print("Your income tax is " + str(income_tax))
 #Put your gross income($): 70000.92
 #Put number of dependents: 2
 #Your income tax is 10800.184000000001
+
+
+# Question 3 : To store different data type values into a list.
+
+Name = input("Enter the name of the Student: ")
+SID = int(input("Enter the Student Id: "))
+Gender = input("Enter the gender of the Student(F, M, U): ")
+Course_name = input("Enter the Student's course name: ")
+CGPA = float(input("Enter the Student's CGPA: "))
+
+Student_list = ['Name', 'SID', 'Gender', 'Course name', 'CGPA']
+print(Student_list)
+
+Student_info = [Name, SID, Gender, Course_name, CGPA]
+print("\n The list of the Student information:\n ", Student_info)
+
+# Question 4 : Make a list to enter marks of 5 students into a list and display them in a sorted manner.
+
+student1_marks = int(input("Enter the marks of the Student 1: "))
+student2_marks = int(input("Enter the marks of the Student 2: "))
+student3_marks = int(input("Enter the marks of the Student 3: "))
+student4_marks = int(input("Enter the marks of the Student 4: "))
+student5_marks = int(input("Enter the marks of the Student 5: "))
+
+student_markslist = [student1_marks, student2_marks, student3_marks, student4_marks, student5_marks]
+print("\n List of the Student Marks:\n ", student_markslist)
+
+# Sorted List
+print("\n Sorted Student List (increasing order): ")
+student_markslist.sort()
+print(student_markslist)
+
+# Question 5:
+# (a) Print a specified list after removing 4th element i.e. Black.
+# (b) Remove Black and Pink from the list and replace it with Purple.
+
+color_list = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
+
+# Print (a) part
+print('\n (a)')
+print(color_list)
+# Remove 4th element that is Black
+color_list.remove('Black')
+print("\n List after removing Black Color:\n ", color_list)
+
+color_list = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
+# Print (b) part
+print('\n (b)')
+print(color_list)
+# Replace Black and Pink with Purple
+color_list[3:5] = ['Purple']
+print("\n List after replacing Black and Pink with Purple Color:\n ", color_list)
