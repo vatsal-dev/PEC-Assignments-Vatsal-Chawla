@@ -37,7 +37,7 @@ department = input("Enter your dept.:")
 CGPA = input("Enter your CGPA:")
 
 #Printing the statement with the asked formatting.
-print("Hey, %s Here! \nMy SID is %s \nI am from ABC%s department and my CGPA is %s" %(name, SID, department, CGPA))
+print("Hey, %s Here! \nMy SID is %s \nI am from %s department and my CGPA is %s" %(name, SID, department, CGPA))
 
 #Ques 2 Finished. 
 ######################
