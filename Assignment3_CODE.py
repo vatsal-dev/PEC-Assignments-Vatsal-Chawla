@@ -216,6 +216,76 @@ print("")
 
 #----------------------------------------------------
 
+#Question 7
 
+print("Question 7")
+number=int(input("Total elements of Fibonacci sequence that you want(must be greater than 1)- "))
+
+#using the formula of the sum of previous two terms is equal to the present term.
+a_n1=1
+a_n2=0
+n=0
+#initializing sum with first two terms
+sum=a_n1+a_n2
+
+#printing the initial two terms as the recursion is not valid on them
+print(f"Fibonnaci sequence with {number} terms")
+print(a_n2)
+print(a_n1)
+
+#Printing the remaining fibonnaci terms
+while n<number-2:
+    a_n=a_n2+a_n1
+    a_n2=a_n1
+    a_n1=a_n
+    print(a_n)
+    n=n+1
+    sum+=a_n
+average=sum/number
+#printing the program end prompt
+print(f"Average of total {number} terms of sequence is {average}")
+print("END")
+
+#----------------------------------------------------
+
+#Question 8
+
+print("Question 8")
+Set1= {1, 2, 3, 4, 5}
+Set2= {2, 4, 6, 8}
+Set3= {1, 5, 9, 13, 17}
+
+#Finding symmetric difference of both the sets
+print("Part a")
+set_notboth=Set1^Set2
+print(f"set with elements not common in both is {set_notboth}")
+
+#Finding symmetric difference of all sets
+print("Part b")
+set_onlyinone=Set1^Set2^Set3
+print(f"Set of elements that is only present in one set is {set_onlyinone}")
+
+#Finding elements that is common in any two sets
+print("Part C")
+set_onlyintwo=(Set1|Set2|Set3)- (Set1^Set2^Set3)-(Set1&Set2&Set3)
+print(f"Set of elements that is only present in two set is {set_onlyintwo}")
+
+#Finding elements common in set1 and range 1 to 10
+print("Part d")
+new_set1=set()
+for n in range(1,11):
+    new_set1.add(n)
+not_common_1=new_set1- Set1
+print(f"set of all integers in the range 1 to 10 that are not in Set1 {not_common_1}")
+
+#Finding elements common in sets 1,2,3 and range 1 to 10
+print("Part e")
+new_set2=set()
+for n in range(1,11):
+    new_set2.add(n)
+not_common_2=new_set2 - (Set1|Set2|Set3)
+print(f"set of all integers in the range 1 to 10 that are not in Set1 and Set2 and Set3 {not_common_2}")
+
+#----------------------------------------------------
 
 
